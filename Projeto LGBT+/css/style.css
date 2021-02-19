@@ -1,0 +1,405 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* SEÇÃO PADRONIZADAS */
+.frase{
+    width: 450px;
+    height: inherit;
+    margin-left: 140px;
+    float: left;
+}
+
+p{
+    width: 430px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+
+h1{
+    width: 100%;
+    height: 40px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    padding-top: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+h1::first-letter{
+    font-size: 1.5em;
+    color: red;
+}
+
+.linkSub{
+    color: black;
+    text-decoration:none;
+}
+
+/* SEÇÃO DO LOGO */
+figure{
+    width: 150px;
+    height: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(../imagens/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    float: left;
+}
+
+
+/* SEÇÃO DO MENU */
+#containerMenu{
+    width: 100%;
+    height: 75px;
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu{
+    width: 1200px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listMenu{
+    width: inherit;
+    height: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.itemMenu{
+    width: 175px;
+    height: 45px;
+    list-style: none;
+    float: left;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.itemMenu:hover{
+    background-color: rgba(21,141,163,.9);
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* Submenu */
+#submenu{
+    width: 135px;
+    height: 260px;
+    background-color: lavender;
+    margin-top: 27px;
+    position: absolute;
+	visibility: hidden;
+}
+
+.itemSubmenu{
+    width: 175px;
+    height: 65px;
+    list-style: none;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 0.9em;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.itemSubmenu:hover{
+    background-color: rgba(21,141,163,.9);
+    cursor: pointer;
+    transition: .5s;
+}
+
+li:hover ul#submenu {
+	visibility: visible;
+    color: black;
+}
+
+/* SEÇÃO SLOGAN */
+#slogan{
+    width: 100%;
+    height: 500px;
+    background-color: blueviolet;
+}
+/* Seção de noticias recentes */
+.containerNoticias{
+    width: 1200px;
+    height: 700px;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#caixaNoticiaMaior{
+    width: 500px;
+    height: 630px;
+    background-color: khaki;
+    margin-left: 30px;
+    float: left;
+}
+
+.containerCaixaNoticia{
+    width: 650px;
+    height: 260;
+    margin-top: 50px;
+    margin-left: 550px;
+    background-color: lightblue;
+}
+
+.caixaNoticia{
+    width: 300px;
+    height: 260px;
+    background-color: lavender;
+}
+
+.textoNoticia{
+    width: 340px;
+    height: 210px;
+    background-color: lightgoldenrodyellow;
+    margin-left: 5px;
+    margin-top: -235px;
+    float: right;
+}
+
+.textoNoticia p{
+    width: inherit;
+    height: 105px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    background-color: mediumaquamarine;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.subTexto{
+    width: inherit;
+    height: 105;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    background-color: ivory;
+}
+
+/* Seção Noticias */
+#containerNoticiasRight{
+    width: 640px;
+    height: 640px;
+    background-color: olive;
+    float: left;
+}
+
+#containerNoticiaLeft{
+    width: 540px;
+    height: 640px;
+    background-color: azure;
+    margin-left: 640px;
+}
+
+.containerCaixaNoticias{
+    width: 510px;
+    height: 200px;
+    background-color: bisque;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.primeiraLinha{
+    width: 255px;
+    height: 315px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: chocolate;
+    float: left;
+}
+.segundaLinha{
+    width: 255px;
+    height: 315px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: chocolate;
+    float: left;
+}
+
+/* SEÇÃO DE PARADAS */
+.containerParadas{
+    width: 1200px;
+    height: 570px;
+    background-color: cornflowerblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerCaixasParadas{
+    width: 570px;
+    height: 500px;
+    background-color: cyan;
+    margin-left: 10px;
+    float: left;
+}
+
+.containerCaixaParadas{
+    width: 510px;
+    height: 200px;
+    background-color: bisque;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+/* SEÇÃO DE PONTOS TURISTICOS */
+.containerConteudo{
+    width: 1200px;
+    height: 400px;
+    background-color: rgb(51, 84, 194);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo{
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+    border-radius: 5px 20px 0px 0px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+/* SEÇÃO DA COMUNIDADE */
+#containerComunidade{
+    width: 750px;
+    height: inherit;
+    background-color: aliceblue;
+    float: left;
+}
+
+.comunidade{
+    width: 230px;
+    height: 210px;
+    background-color: cadetblue;
+    float: left;
+    margin-left: 15px;
+}
+
+#containerComunidade2{
+    width: 750px;
+    height: 210px;
+    margin-top: 10px;
+    background-color: cornsilk;
+    float: left;
+}
+
+.comunidade2{
+    width: 230px;
+    height: 210px;
+    background-color: cadetblue;
+    float: left;
+    margin-left: 15px;
+}
+
+.fotoComunidade{
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: crimson;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #a7a6a6;
+}
+
+.informacaoComunidade{
+    width: inherit;
+    height: 70px;
+    background-color: khaki;
+}
+/* SEÇÃO DE DICAS */
+
+#containerDicas{
+    width: 450px;
+    height: inherit;
+    background-color: lavender;
+    float: left;
+}
+
+#containerCaixaDicas{
+    width: 290px;
+    height: 90px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.containerFoto{
+    width: 90px;
+    height: 85px;
+    background-color: lightcyan;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #a7a6a6;
+    float: left;
+}
+
+.containerInformacao{
+    width: 190px;
+    height: 75px;
+    background-color: lightgray;
+    margin-left: 95px;
+    padding-top: 10px;
+}
+
+/* SEÇÃO DO RODAPÉ */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+
+#rodape{
+    width: 1200px;
+    height: inherit;
+    background-color: ivory;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rodape p{
+    width: 270px;
+    height: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-left: 480px;
+    padding-top: 20px;
+}
